@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<title>Online examination portal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right">Logo</span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTZDVvmc6FPBpRm0T5HAZOpE_uMgOcf1R56k9yZE9G8-1tBqwIo" class="w3-circle w3-margin-right" style="width:46px">
+    </div>
+    <div class="w3-col s8 w3-bar">
+      <span>Welcome, <strong>Student</strong></span><br>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i>  Overview</a>
+    <a href="index2.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  Register</a>
+    <a href="login.php"class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Admin Login</a>
+    <a href="result.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  Results</a>
+    <a href="payment.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  Payment details</a>
+    <a href="login.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>  Important Dates</a>
+
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+  <!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-dashboard"></i> My Dashboard</b></h5>
+  </header>
+
+  <div class="w3-row-padding w3-margin-bottom">
+    <div class="w3-quarter">
+      <div class="w3-container w3-red w3-padding-16">
+        <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>52</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Register</h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-blue w3-padding-16">
+        <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>99</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Login</h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-teal w3-padding-16">
+        <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>23</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Result</h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-orange w3-text-white w3-padding-16">
+        <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>50</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Payment</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-panel">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third">
+        <h5>Exams</h5>
+        <img src="https://cdn.24.co.za/files/Cms/General/d/5972/e83ff01cf94a44be92bc1ff7c2378c1f.jpg" style="width:100%" alt="Google Regional Map">
+      </div>
+      <div class="w3-twothird">
+        <h5>Subject List</h5>
+        <table class="w3-table w3-striped w3-white">
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>Python.</td>
+            <td><i>id: 101 </i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-bell w3-text-red w3-large"></i></td>
+            <td>TOC.</td>
+            <td><i>id: 102</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-users w3-text-yellow w3-large"></i></td>
+            <td>Computer Networks.</td>
+            <td><i>id: 103</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-comment w3-text-red w3-large"></i></td>
+            <td>DBMS.</td>
+            <td><i>id: 104</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-bookmark w3-text-blue w3-large"></i></td>
+            <td>Maths.</td>
+            <td><i>id: 105</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-laptop w3-text-red w3-large"></i></td>
+            <td>Aptitude.</td>
+            <td><i>id: 106</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-share-alt w3-text-green w3-large"></i></td>
+            <td>PHP.</td>
+            <td><i>id: 106</i></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>General Stats</h5>
+    <p>New Students</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-center w3-padding w3-green" style="width:10%">+10%</div>
+    </div>
+
+    <p>Avg. Test performance</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-center w3-padding w3-orange" style="width:80%">80%</div>
+    </div>
+
+    <p>Improvement</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-center w3-padding w3-red" style="width:55%">55%</div>
+    </div>
+  </div>
+  <hr>
+
+  <div class="w3-container">
+    <h5>Subject Pass Percentile</h5>
+    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+      <tr>
+        <td>Python</td>
+        <td>65%</td>
+      </tr>
+      <tr>
+        <td>TOC</td>
+        <td>80%</td>
+      </tr>
+      <tr>
+        <td>Computer Networks</td>
+        <td>55%</td>
+      </tr>
+      <tr>
+        <td>DBMS</td>
+        <td>50%</td>
+      </tr>
+      <tr>
+        <td>Maths</td>
+        <td>85%</td>
+      </tr>
+      <tr>
+        <td>Aptitude</td>
+        <td>79%</td>
+      </tr>
+    </table><br>
+
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>Recent Login Ins</h5>
+    <ul class="w3-ul w3-card-4 w3-white">
+      <li class="w3-padding-16">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS3T3RRIG6af02swO60-EKwHu7q_G9NCZ9N1T7NZTbiv8_7CCwL" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <span class="w3-xlarge">Student</span><br>
+      </li>
+      <li class="w3-padding-16">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR6heHkUsjyiCkuVjYSiIE-4t7RTMzvmE96a1wAo2B_momm4kA2" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <span class="w3-xlarge">Admin</span><br>
+      </li>
+
+    </ul>
+  </div>
+  <hr>
+
+  <div class="w3-container">
+    <h5>Made By</h5>
+    <div class="w3-row">
+      <div class="w3-col m2 text-center">
+        <img class="w3-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS3T3RRIG6af02swO60-EKwHu7q_G9NCZ9N1T7NZTbiv8_7CCwL" style="width:96px;height:96px">
+      </div>
+      <div class="w3-col m10 w3-container">
+        <h4>Arul Saxena <span class="w3-opacity w3-medium">SRM IST student</span></h4>
+        <br>
+      </div>
+    </div>
+
+    <div class="w3-row">
+      <div class="w3-col m2 text-center">
+        <img class="w3-circle" src="data:image/png;base64,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" style="width:96px;height:96px">
+      </div>
+      <div class="w3-col m10 w3-container">
+        <h4>Muskaan Dhadwal <span class="w3-opacity w3-medium">SRM IST student</span></h4>
+        <br>
+      </div>
+    </div>
+  </div>
+  <br>
+
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-light-grey">
+    <h4>FOOTER</h4>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

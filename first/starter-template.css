@@ -1,0 +1,44 @@
+body {
+	padding-top: 200px;
+	background-color:rgb(240, 238, 243);
+	background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRUVWyX_TTeic49c4uOHLFbAstmaAkDNpQueE3hbdHFe5t3Ukwu");
+	background-position: hsla(360, 100%, 100%, 1);
+
+}
+#demoFont {
+font-family: "Arial Black", Gadget, sans-serif;
+font-size: 38px;
+letter-spacing: 1.6px;
+word-spacing: 0.2px;
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: small-caps;
+text-transform: uppercase;
+}
+#space{
+padding-left: 450px;
+
+}
+#iconspace{
+padding-top: 500px;
+
+}
+.example {
+
+background:  url("https://media.istockphoto.com/vectors/back-to-school-doodles-in-chalkboard-background-vector-id992492668?k=6&m=992492668&s=170667a&w=0&h=vmfsO-8BlvXzTkCKPaOfCzp_XYAsPQK1PfWnmHrtmOA=") no-repeat scroll hsla(360, 200%, 100%,0);
+}
+#iconfont{
+
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 10px;
+	letter-spacing: 1.6px;
+	word-spacing: 0.2px;
+	color: #000000;
+	font-weight: 700;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: small-caps;
+	text-transform: uppercase;
+}
