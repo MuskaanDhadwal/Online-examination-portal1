@@ -2,10 +2,7 @@
 
 <html>
 <head>
-  <div style="padding-top :50px;">&ensp;
-    <img src="https://i.pinimg.com/originals/7e/fd/04/7efd04149a33d9bfee5dd22352c529b8.png"  width="400px" height="300px">&nbsp;
-    <img src="https://i.pinimg.com/originals/7e/fd/04/7efd04149a33d9bfee5dd22352c529b8.png"  width="400px" height="300px">&nbsp;
-    <img src="https://i.pinimg.com/originals/7e/fd/04/7efd04149a33d9bfee5dd22352c529b8.png"  width="500px" height="300px">
+
   <meta charset="UTF-8">
   <title>Database</title>
   <script type="text/javascript">
@@ -60,11 +57,11 @@
     }
   }
 </script>
-</head>
+</head >
 
 <style>
 body {
-background-image: url('https://lh3.googleusercontent.com/proxy/1_kn-H_cVeg_gLqsLQQDeWRrN2zqrY0pLcKTMoFK5V2INvJIJzua8Epmyao38jjpEDZZvCDg05KN50jzOCfDjDsFKxuMfHQLO9boSKpYwJ4HkrjbMBzmnkQjEsL1Tqs');
+background-image: url('https://static.brusheezy.com/system/resources/previews/000/050/626/non_2x/flat-education-psd-icons-pack-photoshop-psds.jpg');
 background-repeat: repeat;
 scroll-behavior: 0 0;
 }
@@ -74,7 +71,7 @@ scroll-behavior: 0 0;
 
 
 
-<form name="reg" action="code_exec.php" onsubmit="return validateForm()" method="post" style="padding-top :180px;padding-bottom:200px;">
+<form name="reg" action="code_exec.php" onsubmit="return validateForm()" method="post" style=" background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Location_dot_black.svg/1024px-Location_dot_black.svg.png');background-position:center;background-repeat: no-repeat;background-size: 45% 100%;padding-top:100px">
   <table width="274" border="0" align="center" cellpadding="2" cellspacing="0">
     <tr>
       <td colspan="2">
@@ -87,7 +84,7 @@ font-weight: 700;
 text-decoration: underline solid rgb(68, 68, 68);
 font-style: normal;
 font-variant: normal;
-text-transform: uppercase;color:white;">
+text-transform: uppercase;color:white;padding-bottom:40px;">
           <?php
           // $remarks=$_GET['remarks'];
           if (!isset($_GET['remarks']))
@@ -130,7 +127,7 @@ text-transform: uppercase;color:white;">
         <td><input type="text" name="password" /></td>
       </tr>
       <tr>
-        <td><div align="right"></div></td>
+        <td><div align="right" style="padding-bottom:90px;"></div></td>
         <td><input name="submit" type="submit" value="Submit" /></td>
       </tr>
     </table>
@@ -138,7 +135,7 @@ text-transform: uppercase;color:white;">
   &nbsp;&nbsp;
 
 
-</div>
+
 </body>
 
 

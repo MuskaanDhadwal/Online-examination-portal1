@@ -41,7 +41,7 @@ if ( isset($_POST['admin']) && isset($_POST['pass']) )
     <body id="space" >
         <div class="container" >
          <div id="demoFont">
-            <h1>Log In </h1>
+            <h1 style="font-family:Comic Sans MS;color:white;padding-left:200px;"><strong>Log In </strong</h1>
           </div>
             <?php
 
@@ -54,20 +54,20 @@ if ( isset($_POST['admin']) && isset($_POST['pass']) )
 
             <form method="POST" class="form-horizontal">
                 <div class="form-group"  >
-                    <label class="control-label col-sm-2" for="admin" id="demotext" style="color :Black">User Name:</label>
+                    <label class="control-label col-sm-2" for="admin" id="demotext" style="font-family:Comic Sans MS;color:white;">User Name:</label>
                     <div class="col-sm-3">
                         <input class="form-control" type="text" name="admin" id="nam">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-2" for="id_1723" style="color :Black">Password:</label>
+                    <label class="control-label col-sm-2" for="id_1723" style="font-family:Comic Sans MS;color:white;">Password:</label>
                     <div class="col-sm-3">
                         <input class="form-control" type="text" name="pass" id="id_1723">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-2 col-sm-offset-2">
-                        <input class="btn btn-primary" type="submit" value="Log In">
+                        <input class="btn btn-default" type="submit" value="Log In">
                         <input class="btn" type="submit" name="cancel" value="Cancel">
                     </div>
                 </div>
