@@ -4,35 +4,25 @@
   <title>exam details</title>
 
 </head>
-<body>
+<body style="background-color:seagreen;font-size:150%;color:white;">
+
 
 
   <?php
-  $servername = "localhost";
-  $username = "root";
-  $password = "root";
-  $dbname = "online_student";
-
-  // Create connection
-  $conn = mysqli_connect($servername, $username, $password, $dbname);
-  // Check connection
-  if (!$conn) {
-      die("Connection failed: " . mysqli_connect_error());
-  }
-
-  $sql = "SELECT * FROM `adminview_student`";
-  $result = mysqli_query($conn, $sql);
+include('connection3.php');
+  $sql = "SELECT * FROM `student`";
+  $result = mysqli_query($connect, $sql);
 
   if (mysqli_num_rows($result) > 0) {
       // output data of each row
       while($row = mysqli_fetch_assoc($result)) {
-          echo "id: " . $row["mem_id"]. " - Name: " . $row["fname"]. " " . $row["lname"]. "<br>";
+          echo "id: " . $row["id"]. " - Name: " . $row["First_name"]. " " . $row["Last_name"]. "<br>";
       }
   } else {
       echo "0 results";
   }
 
-  mysqli_close($conn);
+
   ?>
 
 

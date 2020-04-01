@@ -1,38 +1,30 @@
 <html>
 <head>
+
   <meta charset="UTF-8">
   <title>exam details</title>
 
 </head>
-<body>
+<body style="background-color:#8A0808;font-size:150%;color:white;">
 
 
   <?php
-  $servername = "localhost";
-  $username = "root";
-  $password = "root";
-  $dbname = "online_student";
+  include('connection3.php');
 
-  // Create connection
-  $conn = mysqli_connect($servername, $username, $password, $dbname);
-  // Check connection
-  if (!$conn) {
-      die("Connection failed: " . mysqli_connect_error());
-  }
 
-  $sql = "SELECT * FROM `adminview_coord`";
-  $result = mysqli_query($conn, $sql);
+  $sql = "SELECT * FROM `coordinators`";
+  $result = mysqli_query($connect, $sql);
 
   if (mysqli_num_rows($result) > 0) {
       // output data of each row
       while($row = mysqli_fetch_assoc($result)) {
-          echo "id: " . $row["coordinator_id"]. " - Name: " . $row["name"]. " Room:  " . $row["room"]." Time Slot:  ".$row["time_slot"]." Date:  ".$row["date"]."<br>";
+          echo " id: " . $row["cor_id"]. " - Name: " . $row["Name"]. " Room:  " . $row["Room"]." Time Slot:  ".$row["Time_slot"]." Date:  ".$row["date"]."<br>";
       }
   } else {
       echo "0 results";
   }
 
-  mysqli_close($conn);
+
   ?>
 
 
