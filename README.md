@@ -1,8 +1,9 @@
-# Online Exam Portal Project Setup
-Project on php and database
+# Contributions By
 
-Copy the First folder and paste it in the htdocs.
-Make tables in phpmyadmin as given in the report.
+* Muskaan Dhadwal: Frontend and Backend Architecture . Worked on CSS to transform the HTML page into an elegant and attractive looking web page. Also worked on Backend database design and logic . Worked with phpmyadmin to make the database.
+
+* Arul Saxena : Web Developer. Worked on the main web page . Used HTML and PHP to make the portal. Used php to make the connection to phpmyadmin so the database can be accessed.
+
 
 
 
