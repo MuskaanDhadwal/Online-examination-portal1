@@ -13,7 +13,7 @@ platform for examiners to create and organize internal and external exams
 
 ## Table of contents
 * [Introduction](#Introduction)
-* [Modules](#Scope)
+* [Scope](#Scope)
 * [Snapshots](#snapshots)
 
 ## Introduction
